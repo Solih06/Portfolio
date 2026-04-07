@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soliana | Virtual Assistant & Web Developer</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      color: #333;
+      height: 100%;
+      background: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    /* Overlay */
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.85);
+      min-height: 100%;
+      padding: 40px 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #007bff;
+      transition: color 0.3s;
+    }
+    a:hover {
+      color: #0056b3;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+    header h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 3rem;
+      margin: 0;
+      color: #182848;
+    }
+    header p {
+      font-size: 1.3rem;
+      margin-top: 10px;
+      color: #4b6cb7;
+    }
+
+    /* Cards */
+    .card {
+      background: white;
+      padding: 30px;
+      margin: 20px auto;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+      max-width: 900px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+    .card h2 {
+      color: #4b6cb7;
+      margin-top: 0;
+    }
+    .card h3 {
+      margin-bottom: 8px;
+      color: #182848;
+    }
+
+    /* Services Section */
+    .services-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+      justify-content: center;
+    }
+    .service-box {
+      background: linear-gradient(135deg, #4b6cb7, #182848);
+      color: white;
+      flex: 1 1 250px;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .service-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+    .service-box h3 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-family: 'Montserrat', sans-serif;
+      color: #ffd700;
+    }
+    .service-box ul {
+      padding-left: 20px;
+    }
+    .service-box li {
+      margin-bottom: 8px;
+    }
+
+    /* Contact */
+    .contact-info p {
+      margin: 10px 0;
+    }
+    .contact-icon {
+      font-size: 1.2rem;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #182848;
+    }
+
+    /* Responsive */
+    @media(max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .overlay {
+        padding: 20px 10px;
+      }
+      .card {
+        padding: 20px;
+      }
+      .services-container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="overlay">
+
+  <!-- Header -->
+  <header>
+    <h1>Soliana Hailekiros</h1>
+    <p>Virtual Assistant | Web Developer | Customer Support</p>
+  </header>
+
+  <!-- About Me -->
+  <section>
+    <div class="card">
+      <h2>About Me</h2>
+      <p>
+        Hi, I’m Soliana, a detail-oriented Virtual Assistant and Web Developer with a background in Software Engineering. I specialize in supporting businesses remotely by managing administrative operations, handling customer interactions, and ensuring workflows run efficiently.
+      </p>
+      <p>
+        I have hands-on experience with CRM systems, scheduling, email and calendar management, and lead follow-up. I communicate professionally, resolve issues effectively, and focus on delivering smooth customer experiences.
+      </p>
+      <p>
+        Alongside my virtual assistant expertise, I develop responsive websites using HTML, CSS, and JavaScript. This allows me to contribute both operationally and technically to business growth.
+      </p>
+    </div>
+
+    <!-- Services -->
+    <div class="card">
+      <h2>Services</h2>
+      <div class="services-container">
+        <div class="service-box">
+          <h3>Virtual Assistance</h3>
+          <ul>
+            <li>Email & calendar management</li>
+            <li>Appointment scheduling & coordination</li>
+            <li>Data entry & document organization</li>
+            <li>Internet research & admin support</li>
+          </ul>
+        </div>
+        <div class="service-box">
+          <h3>Customer Support</h3>
+          <ul>
+            <li>Handling customer inquiries via email & chat</li>
+            <li>CRM management & lead tracking</li>
+            <li>Follow-ups & client communication</li>
+            <li>Resolving issues professionally</li>
+          </ul>
+        </div>
+        <div class="service-box">
+          <h3>Web Development</h3>
+          <ul>
+            <li>Responsive website design & development</li>
+            <li>Landing pages for businesses & services</li>
+            <li>Website updates & maintenance</li>
+            <li>Basic SEO & performance optimization</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="card contact-info">
+      <h2>Contact</h2>
+      <p><span class="contact-icon">📧</span> Email: <a href="mailto:solian6h@gmail.com">solian6h@gmail.com</a></p>
+      <p><span class="contact-icon">💼</span> LinkedIn: <a href="https://www.linkedin.com/in/soliana-hailekiros" target="_blank">View my LinkedIn profile</a></p>
+      <p><span class="contact-icon">📞</span> Phone: +251902017363</p>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2026 Soliana Hailekiros | All rights reserved
+  </footer>
+
+</div>
+
+</body>
+</html>
